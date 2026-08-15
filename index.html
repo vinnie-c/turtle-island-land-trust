@@ -4,6 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Turtle Island Land Trust protects and restores natural and urban spaces and advances public education through land- and ocean-based learning, research, and community programs.">
+  <meta name="theme-color" content="#20392d">
+  <meta property="og:title" content="Turtle Island Land Trust">
+  <meta property="og:description" content="Protecting and restoring natural and urban spaces while creating opportunities to learn from the lands and waters around us.">
+  <meta property="og:type" content="website">
   <title>Turtle Island Land Trust</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +20,7 @@
       <span class="brand-mark" aria-hidden="true">TILT</span>
       <span class="brand-name">Turtle Island Land Trust</span>
     </a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu">Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
       <a href="#work">Our work</a>
       <a href="#education">Education</a>
@@ -117,8 +121,8 @@
       </div>
       <div class="body-copy">
         <p>
-          Turtle Island Land Trust is being developed as a Canadian charitable organization
-          dedicated to environmental restoration, conservation and public education.
+          Turtle Island Land Trust is dedicated to environmental restoration,
+          conservation and public education in Canada.
         </p>
         <p>
           Our approach is practical: care for places over the long term, use restoration as a
@@ -126,8 +130,8 @@
           education and public participation.
         </p>
         <p class="small-note">
-          Initial activities are expected to focus in Ontario, Nova Scotia and British Columbia,
-          with growth guided by conservation opportunity and organizational capacity.
+          Our initial work will focus on opportunities in Ontario, Nova Scotia and British Columbia,
+          with growth guided by conservation need and organizational capacity.
         </p>
       </div>
     </section>
@@ -177,12 +181,7 @@
           Interested in conservation, restoration, donating property, supporting a project,
           or collaborating with the Trust?
         </p>
-        <a class="contact-link" href="mailto:hello@turtleislandlandtrust.ca">
-          hello@turtleislandlandtrust.ca
-        </a>
-        <p class="small-note">
-          Replace this placeholder address with the Trust's working email before publication.
-        </p>
+        <p class="contact-coming">Contact details will be published here shortly.</p>
       </div>
     </section>
   </main>
@@ -204,6 +203,7 @@
     toggle.addEventListener('click', () => {
       const open = toggle.getAttribute('aria-expanded') === 'true';
       toggle.setAttribute('aria-expanded', String(!open));
+      toggle.setAttribute('aria-label', open ? 'Open navigation menu' : 'Close navigation menu');
       nav.classList.toggle('open');
     });
 
@@ -211,6 +211,7 @@
       link.addEventListener('click', () => {
         nav.classList.remove('open');
         toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Open navigation menu');
       });
     });
   </script>
