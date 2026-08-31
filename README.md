@@ -1,33 +1,40 @@
-# Turtle Island Land Trust — Website V1
+# Turtle Island Land Trust website — V2
 
-A lightweight static website intended for GitHub Pages.
+Static GitHub Pages website for turtleislandlandtrust.org.
 
-## Files
+## Structure
 
-- `index.html` — site structure and content
-- `styles.css` — all visual styling
-- `.nojekyll` — tells GitHub Pages to serve the static files directly
+- `index.html` — Home
+- `projects.html` — Projects landing page
+- `restoration.html` — Restoration
+- `conservation.html` — Conservation
+- `urban.html` — Urban
+- `education.html` — Education
+- `volunteer.html` — Volunteer
+- `protect-a-place.html` — Protect a Place
+- `about.html` — About
+- `support.html` — Support
+- `contact.html` — Contact
+- `styles.css` — Site-wide design
+- `script.js` — Mobile navigation and footer year
+- `favicon.svg` — Browser icon
+- `CNAME` — GitHub Pages custom domain
+- `.nojekyll` — Static GitHub Pages configuration
 
-## Publish with GitHub Pages
+## Publishing
 
-1. Open **Settings → Pages** in this repository.
-2. Under **Build and deployment**, choose **Deploy from a branch**.
-3. Select the `main` branch and `/ (root)`.
-4. Save.
+Upload the files to the root of the existing `vinnie-c/turtle-island-land-trust` repository on the `main` branch.
 
-GitHub will then provide the Pages URL.
+Important: keep the `CNAME` file exactly as provided so GitHub Pages continues to use `turtleislandlandtrust.org`.
 
-## Before public launch
+## Email
 
-Replace the placeholder email `hello@turtleislandlandtrust.ca` if that address is not active.
+Planned public email structure:
 
-Later additions can include:
+- `info@turtleislandlandtrust.org` — main Contact page
+- `projects@turtleislandlandtrust.org` — Projects page only
+- `volunteer@turtleislandlandtrust.org` — Volunteer page only
 
-- custom domain
-- French version
-- donation platform link
-- charity registration information
-- board / governance page
-- individual project pages
-- annual reports and policies
-- real project photography
+`board@turtleislandlandtrust.org` is intentionally kept off the public website for internal board use.
+
+The addresses are currently shown as text only. Once Google Workspace is active, convert them to clickable `mailto:` links.
