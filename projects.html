@@ -5,15 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Explore Turtle Island Land Trust restoration, conservation and urban project areas.">
   <meta name="theme-color" content="#742a3a">
-  <meta property="og:title" content="Projects | Turtle Island Land Trust">
+  <meta property="og:title" content="Our Work | Turtle Island Land Trust">
   <meta property="og:description" content="Explore Turtle Island Land Trust restoration, conservation and urban project areas.">
   <meta property="og:type" content="website">
-  <title>Projects | Turtle Island Land Trust</title>
+  <title>Our Work | Turtle Island Land Trust</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="v3.css">
 </head>
 <body>
 
@@ -24,55 +25,139 @@
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu">Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-      <div class="nav-parent">
-        <a href="projects.html" aria-current="page">Projects</a>
-        <div class="subnav" aria-label="Projects">
-          <a href="restoration.html">Restoration</a>
-          <a href="conservation.html">Conservation</a>
-          <a href="urban.html">Urban</a>
-        </div>
-      </div>
-      <a href="education.html">Education</a>
-      <a href="volunteer.html">Volunteer</a>
-      <a href="protect-a-place.html">Protect a Place</a>
-      <a href="about.html">About</a>
-      <a class="nav-cta" href="support.html">Support</a>
+      <a href="about.html">About Us</a>
+      <a href="projects.html" aria-current="page">Our Work</a>
+      <a href="support.html">Support</a>
+      <a href="contact.html">Contact Us</a>
     </nav>
   </header>
 
   <main>
     <section class="page-hero">
-      <p class="eyebrow">Projects</p>
-      <h1>Restoration first.</h1>
-      <p>Our project work begins with ecological repair, extends to long-term conservation, and includes the places where people live.</p>
+      <p class="eyebrow">Our Work</p>
+      <h1>Projects rooted in place.</h1>
+      <p>
+        We organize projects by where the work happens — rural or urban — and use a simple colour system
+        to show what each project involves.
+      </p>
     </section>
 
     <section class="section">
-      <div class="project-grid">
-        <a class="project-tile" href="restoration.html">
-          <div>
-            <p class="section-kicker">01 · Priority</p>
-            <h3>Restoration</h3>
-            <p>Recover ecological function, biodiversity, water quality and resilience in degraded places.</p>
+      <div class="section-heading">
+        <p class="section-kicker">How to read our projects</p>
+        <h2>One project can involve several kinds of work.</h2>
+      </div>
+      <div class="work-legend large" aria-label="Project type legend">
+        <span class="tag tag-restoration">Restoration</span>
+        <span class="tag tag-conservation">Conservation</span>
+        <span class="tag tag-land">Land</span>
+        <span class="tag tag-buildings">Buildings</span>
+      </div>
+      <p class="legend-note">
+        For example, an urban property might be tagged <strong>Restoration + Buildings</strong>,
+        while a wetland project might be tagged <strong>Restoration + Conservation + Land</strong>.
+      </p>
+    </section>
+
+    <section id="rural" class="section work-category rural-category">
+      <div class="category-heading">
+        <div>
+          <p class="section-kicker">Rural Projects</p>
+          <h2>Land, water and habitat.</h2>
+        </div>
+        <p>
+          Rural work can include degraded lands, habitats, wetlands, shorelines, watersheds and other places
+          where long-term restoration or conservation can create lasting public benefit.
+        </p>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card placeholder-card">
+          <div class="project-card-top">
+            <span class="project-status">Project profile coming soon</span>
+            <div class="tag-row">
+              <span class="tag tag-restoration">Restoration</span>
+              <span class="tag tag-land">Land</span>
+            </div>
           </div>
-          <span class="arrow" aria-hidden="true">→</span>
-        </a>
-        <a class="project-tile" href="conservation.html">
           <div>
-            <p class="section-kicker">02</p>
-            <h3>Conservation</h3>
-            <p>Acquire, steward and protect lands and waters with lasting ecological or community significance.</p>
+            <h3>Future rural restoration project</h3>
+            <p>Project profiles will document the place, ecological challenge, restoration approach, partners, monitoring and long-term stewardship.</p>
           </div>
-          <span class="arrow" aria-hidden="true">→</span>
-        </a>
-        <a class="project-tile" href="urban.html">
+        </article>
+
+        <article class="project-card placeholder-card">
+          <div class="project-card-top">
+            <span class="project-status">Project profile coming soon</span>
+            <div class="tag-row">
+              <span class="tag tag-conservation">Conservation</span>
+              <span class="tag tag-land">Land</span>
+            </div>
+          </div>
           <div>
-            <p class="section-kicker">03</p>
-            <h3>Urban</h3>
-            <p>Use restoration and stewardship to improve ecological and community value in cities.</p>
+            <h3>Future rural conservation project</h3>
+            <p>Conservation profiles can show why a place matters, how it is protected and how the Trust will care for it over time.</p>
           </div>
-          <span class="arrow" aria-hidden="true">→</span>
-        </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="urban" class="section work-category urban-category">
+      <div class="category-heading">
+        <div>
+          <p class="section-kicker">Urban Projects</p>
+          <h2>Land and buildings in cities.</h2>
+        </div>
+        <p>
+          Urban projects can include vacant or underused land, habitat, community spaces and buildings
+          adapted for conservation, restoration, education or other public-benefit uses.
+        </p>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card placeholder-card">
+          <div class="project-card-top">
+            <span class="project-status">Project profile coming soon</span>
+            <div class="tag-row">
+              <span class="tag tag-restoration">Restoration</span>
+              <span class="tag tag-buildings">Buildings</span>
+            </div>
+          </div>
+          <div>
+            <h3>Future building restoration project</h3>
+            <p>Buildings can be rehabilitated and adapted to support educational programming, community use and long-term stewardship.</p>
+          </div>
+        </article>
+
+        <article class="project-card placeholder-card">
+          <div class="project-card-top">
+            <span class="project-status">Project profile coming soon</span>
+            <div class="tag-row">
+              <span class="tag tag-restoration">Restoration</span>
+              <span class="tag tag-conservation">Conservation</span>
+              <span class="tag tag-land">Land</span>
+            </div>
+          </div>
+          <div>
+            <h3>Future urban land project</h3>
+            <p>Urban land can be restored for biodiversity, ecological function, education and community connection.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="education-band">
+      <div class="education-copy">
+        <p class="section-kicker light">Education & Learning</p>
+        <h2>Learning is part of the work.</h2>
+        <p>
+          Projects can support land-based and ocean-based learning, workshops, research, publications,
+          public talks and exhibitions.
+        </p>
+      </div>
+      <div class="education-list">
+        <div><span>01</span> Land-based and ocean-based learning</div>
+        <div><span>02</span> Workshops, research, talks and exhibitions</div>
       </div>
     </section>
 
@@ -80,28 +165,11 @@
       <div class="feature-inner">
         <div>
           <p class="section-kicker">Project inquiries</p>
-          <h2>Bring us a place, project or partnership.</h2>
+          <h2>Have a place or project in mind?</h2>
         </div>
         <div>
-          <p>For restoration, conservation, urban projects and project partnerships:</p>
-          <p class="contact-link">projects@turtleislandlandtrust.org</p>
-          <p class="small-note">This address should be made clickable once Google Workspace is active.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="content-grid">
-        <h2>Project profiles</h2>
-        <div class="content-copy">
-          <p>
-            As projects are established, each project page can document the place, ecological challenges,
-            restoration approach, partners, monitoring, public learning and long-term stewardship.
-          </p>
-          <div class="callout">
-            <h3>Projects coming soon</h3>
-            <p>This page is ready to become the Trust’s public portfolio as properties and initiatives are established.</p>
-          </div>
+          <p>Project-specific contact information will be added once the Trust’s email workspace is active.</p>
+          <a class="button button-burgundy" href="contact.html">Contact Us</a>
         </div>
       </div>
     </section>
@@ -114,10 +182,10 @@
       <div class="small-note">Restoration · Conservation · Education</div>
     </div>
     <div class="footer-links">
-      <a href="projects.html">Projects</a>
-      <a href="volunteer.html">Volunteer</a>
-      <a href="protect-a-place.html">Protect a Place</a>
-      <a href="contact.html">Contact</a>
+      <a href="about.html">About Us</a>
+      <a href="projects.html">Our Work</a>
+      <a href="support.html">Support</a>
+      <a href="contact.html">Contact Us</a>
     </div>
     <div class="footer-meta">
       <span>Canada</span>
