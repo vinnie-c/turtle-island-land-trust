@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="v3.css">
 </head>
 <body>
 
@@ -24,19 +25,10 @@
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu">Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-      <div class="nav-parent">
-        <a href="projects.html">Projects</a>
-        <div class="subnav" aria-label="Projects">
-          <a href="restoration.html">Restoration</a>
-          <a href="conservation.html">Conservation</a>
-          <a href="urban.html">Urban</a>
-        </div>
-      </div>
-      <a href="education.html">Education</a>
-      <a href="volunteer.html">Volunteer</a>
-      <a href="protect-a-place.html">Protect a Place</a>
-      <a href="about.html">About</a>
-      <a class="nav-cta" href="support.html">Support</a>
+      <a href="about.html">About Us</a>
+      <a href="projects.html">Our Work</a>
+      <a href="support.html">Support</a>
+      <a href="contact.html">Contact Us</a>
     </nav>
   </header>
 
@@ -52,115 +44,100 @@
         <p class="eyebrow">Restoration · Conservation · Education</p>
         <h1>Protect the places that sustain us.</h1>
         <p class="hero-copy">
-          Turtle Island Land Trust restores degraded places, protects lands and waters of lasting value,
+          Turtle Island Land Trust restores degraded places, protects lands and buildings of lasting value,
           and creates opportunities for people to learn from the places around them.
         </p>
         <div class="hero-actions">
-          <a class="button button-primary" href="projects.html">Explore our projects</a>
-          <a class="text-link" href="protect-a-place.html">Protect a place <span aria-hidden="true">→</span></a>
+          <a class="button button-primary" href="projects.html">Explore our work</a>
+          <a class="text-link" href="support.html">Support the Trust <span aria-hidden="true">→</span></a>
         </div>
       </div>
       <p class="hero-note">Working across Canada</p>
     </section>
 
-    <section class="statement">
-      <p class="section-kicker">Our purpose</p>
-      <p class="statement-text">
-        Repair what has been damaged. Protect what remains. Make conservation part of public learning.
-      </p>
+    <section class="section split-section">
+      <div>
+        <p class="section-kicker">About Us</p>
+        <h2>A land trust built around restoration.</h2>
+      </div>
+      <div class="body-copy">
+        <p>
+          Turtle Island Land Trust is a Canadian charitable organization focused on environmental restoration,
+          conservation and public education.
+        </p>
+        <p>
+          We care for places over the long term, use restoration as a tool for ecological recovery,
+          and connect conservation work with learning, research and public participation.
+        </p>
+        <a class="card-link" href="about.html">About the Trust →</a>
+      </div>
     </section>
 
     <section class="section projects-showcase">
       <div class="section-heading">
-        <p class="section-kicker">Projects</p>
-        <h2>Places worth caring for.</h2>
-        <p class="intro">Our work is organized around three connected areas: restoration, conservation and urban places.</p>
+        <p class="section-kicker">Our Work</p>
+        <h2>From rural landscapes to urban places.</h2>
+        <p class="intro">
+          Projects are organized by setting — rural or urban — and colour-coded by the kind of work involved:
+          restoration, conservation, land and buildings.
+        </p>
       </div>
 
-      <div class="project-grid">
-        <a class="project-tile" href="restoration.html">
-          <div>
-            <p class="section-kicker">01 · Priority</p>
-            <h3>Restoration</h3>
-            <p>Bring degraded lands, waters and habitats back toward ecological health and resilience.</p>
-          </div>
+      <div class="work-legend" aria-label="Project type legend">
+        <span class="tag tag-restoration">Restoration</span>
+        <span class="tag tag-conservation">Conservation</span>
+        <span class="tag tag-land">Land</span>
+        <span class="tag tag-buildings">Buildings</span>
+      </div>
+
+      <div class="work-split">
+        <a class="work-column" href="projects.html#rural">
+          <p class="section-kicker">Rural</p>
+          <h3>Land, water and habitat.</h3>
+          <p>Restoration and conservation projects outside urban centres, including land, habitat, shorelines and watersheds.</p>
           <span class="arrow" aria-hidden="true">→</span>
         </a>
-        <a class="project-tile" href="conservation.html">
-          <div>
-            <p class="section-kicker">02</p>
-            <h3>Conservation</h3>
-            <p>Protect places of ecological, cultural, health and community significance for the long term.</p>
-          </div>
-          <span class="arrow" aria-hidden="true">→</span>
-        </a>
-        <a class="project-tile" href="urban.html">
-          <div>
-            <p class="section-kicker">03</p>
-            <h3>Urban</h3>
-            <p>Restore and steward buildings, lots and other urban spaces as places for habitat, learning and community.</p>
-          </div>
+        <a class="work-column" href="projects.html#urban">
+          <p class="section-kicker">Urban</p>
+          <h3>Land and buildings in cities.</h3>
+          <p>Projects that restore, protect and adapt urban land and buildings for ecological, educational and community benefit.</p>
           <span class="arrow" aria-hidden="true">→</span>
         </a>
       </div>
     </section>
 
-    <section class="education-band">
-      <div class="education-copy">
-        <p class="section-kicker light">Education</p>
-        <h2>Learning should happen where ecology happens.</h2>
-        <p>
-          The Trust connects conservation and restoration with public education, research,
-          hands-on learning and community participation.
-        </p>
+    <section class="section">
+      <div class="section-heading">
+        <p class="section-kicker">Support</p>
+        <h2>Give time or give resources.</h2>
       </div>
-      <div class="education-list">
-        <a href="education.html"><span>01</span> Land-based learning</a>
-        <a href="education.html"><span>02</span> Ocean-based learning</a>
-        <a href="education.html"><span>03</span> Courses, seminars & workshops</a>
-        <a href="education.html"><span>04</span> Research & publications</a>
-        <a href="education.html"><span>05</span> Public talks & exhibitions</a>
-      </div>
-    </section>
-
-    <section class="section split-section">
-      <div>
-        <p class="section-kicker">Volunteer</p>
-        <h2>Do the work with us.</h2>
-      </div>
-      <div class="body-copy">
-        <p>
-          Restoration days, ecological monitoring, planting, clean-ups, events, education,
-          photography and skilled professional support can all become ways to participate.
-        </p>
-        <a class="button button-burgundy" href="volunteer.html">Volunteer with TILT</a>
+      <div class="support-options">
+        <a class="support-option donate-option" href="support.html#donate">
+          <p class="section-kicker light">Donate</p>
+          <h3>Support the work.</h3>
+          <p>Financial gifts, property, partnerships and professional expertise can help projects move from opportunity to long-term stewardship.</p>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="support-option volunteer-option" href="support.html#volunteer">
+          <p class="section-kicker">Volunteer</p>
+          <h3>Take part directly.</h3>
+          <p>Join restoration days, monitoring, education, events or skills-based volunteer work.</p>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
       </div>
     </section>
 
     <section class="feature-band">
       <div class="feature-inner">
         <div>
-          <p class="section-kicker">Protect a place</p>
-          <h2>Some places need a long-term home.</h2>
+          <p class="section-kicker">Contact Us</p>
+          <h2>Start a conversation.</h2>
         </div>
         <div>
-          <p>
-            Own land, a building or another place with ecological, educational or community value?
-            Talk to us about protection, restoration, stewardship, property gifts or partnership.
-          </p>
-          <a class="button button-burgundy" href="protect-a-place.html">Start a conversation</a>
+          <p>Have a project, property, partnership or question for the Trust?</p>
+          <a class="button button-burgundy" href="contact.html">Contact the Trust</a>
         </div>
       </div>
-    </section>
-
-    <section class="support">
-      <p class="section-kicker light">Support the work</p>
-      <h2>Help restore and protect places for the long term.</h2>
-      <p>
-        Support can take many forms: financial gifts, land or property, partnerships,
-        professional expertise and volunteer involvement.
-      </p>
-      <a class="button button-light" href="support.html">Ways to support TILT</a>
     </section>
   </main>
 
@@ -171,10 +148,10 @@
       <div class="small-note">Restoration · Conservation · Education</div>
     </div>
     <div class="footer-links">
-      <a href="projects.html">Projects</a>
-      <a href="volunteer.html">Volunteer</a>
-      <a href="protect-a-place.html">Protect a Place</a>
-      <a href="contact.html">Contact</a>
+      <a href="about.html">About Us</a>
+      <a href="projects.html">Our Work</a>
+      <a href="support.html">Support</a>
+      <a href="contact.html">Contact Us</a>
     </div>
     <div class="footer-meta">
       <span>Canada</span>
