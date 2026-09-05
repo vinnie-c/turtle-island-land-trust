@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Turtle Island Land Trust restores degraded places, protects lands and buildings of lasting value, and advances public education in Canada.">
+  <meta name="description" content="Turtle Island Land Trust restores degraded natural and urban places, protects them for the long term, and advances public learning in Canada.">
   <meta name="theme-color" content="#742a3a">
   <meta property="og:title" content="Turtle Island Land Trust">
-  <meta property="og:description" content="Restoration, conservation and public education across natural and urban places in Canada.">
+  <meta property="og:description" content="Restoring places. Protecting them for the long term.">
   <meta property="og:type" content="website">
   <title>Turtle Island Land Trust</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="v3.css">
+  <link rel="stylesheet" href="drawdown.css">
 </head>
 <body>
   <header class="site-header">
@@ -25,65 +26,14 @@
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu">Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
       <a href="about.html">About Us</a>
-
-      <div class="nav-group">
-        <a class="nav-trigger" href="projects.html">Our Work
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <div class="nav-panel">
-          <span class="nav-panel-label">Our Work</span>
-          <p class="nav-panel-intro">Projects and learning rooted in the places we restore and protect.</p>
-          <div class="nav-panel-grid">
-            <a class="nav-card" href="projects.html">
-              <span class="icon-wrap icon-projects" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M3 18l5-6 4 4 3-5 6 7M3 20h18"/></svg>
-              </span>
-              <span><strong>Projects</strong><small>Rural and urban restoration and conservation.</small></span>
-            </a>
-            <a class="nav-card" href="projects.html#education">
-              <span class="icon-wrap icon-education" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M4 5.5c3-1 5-.5 8 1.5v12c-3-2-5-2.5-8-1.5zM20 5.5c-3-1-5-.5-8 1.5v12c3-2 5-2.5 8-1.5z"/></svg>
-              </span>
-              <span><strong>Education & Learning</strong><small>Field learning, workshops, research and public programs.</small></span>
-            </a>
-          </div>
-          <div class="nav-card-links">
-            <a href="projects.html#rural">Rural Projects →</a>
-            <a href="projects.html#urban">Urban Projects →</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="nav-group">
-        <a class="nav-trigger" href="support.html">Support
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <div class="nav-panel nav-panel-support">
-          <span class="nav-panel-label">Support</span>
-          <p class="nav-panel-intro">Give resources or take part directly.</p>
-          <div class="nav-panel-grid">
-            <a class="nav-card" href="support.html#donate">
-              <span class="icon-wrap icon-donate" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.5-7-9a4 4 0 0 1 7-2.5A4 4 0 0 1 19 11c0 4.5-7 9-7 9z"/></svg>
-              </span>
-              <span><strong>Donate</strong><small>Financial, property and in-kind support.</small></span>
-            </a>
-            <a class="nav-card" href="support.html#volunteer">
-              <span class="icon-wrap icon-volunteer" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="2.5"/><circle cx="16" cy="8" r="2.5"/><path d="M3.5 18c.6-3 2.2-4.5 4.5-4.5S11.9 15 12.5 18M11.5 18c.6-3 2.2-4.5 4.5-4.5s3.9 1.5 4.5 4.5"/></svg>
-              </span>
-              <span><strong>Volunteer</strong><small>Field work, events, education and professional skills.</small></span>
-            </a>
-          </div>
-        </div>
-      </div>
-
+      <a href="projects.html">Our Work</a>
+      <a href="support.html">Support</a>
       <a href="contact.html">Contact Us</a>
     </nav>
   </header>
 
   <main id="top">
-    <section class="hero">
+    <section class="hero drawdown-hero">
       <div class="hero-art" aria-hidden="true">
         <div class="sun"></div>
         <div class="horizon horizon-one"></div>
@@ -91,123 +41,126 @@
         <div class="water-lines"></div>
       </div>
       <div class="hero-content">
-        <p class="eyebrow">Restoration · Conservation · Education</p>
-        <h1>Protect the places that sustain us.</h1>
-        <p class="hero-copy">
-          Turtle Island Land Trust restores degraded places, protects lands and buildings of lasting value,
-          and creates opportunities for people to learn from the places around them.
-        </p>
+        <p class="eyebrow">Restoration · Conservation · Public Learning</p>
+        <h1>Restoring places. Protecting them for the long term.</h1>
+        <p class="hero-copy">Turtle Island Land Trust restores degraded natural and urban places, protects lands and buildings of lasting value, and uses stewardship, research and education to keep that work useful to the public.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="projects.html">Our Work</a>
-          <a class="text-link" href="support.html">Support the Trust <span aria-hidden="true">→</span></a>
+          <a class="button button-primary" href="projects.html">Explore Our Work</a>
+          <a class="text-link" href="about.html">About the Trust <span aria-hidden="true">→</span></a>
         </div>
       </div>
       <p class="hero-note">Working across Canada</p>
     </section>
 
-    <section class="section split-section">
-      <div>
-        <p class="section-kicker">About Us</p>
-        <h2>Who we are.</h2>
+    <section class="signal-strip" aria-label="Turtle Island Land Trust focus">
+      <div class="signal-item"><strong>Canada-wide</strong><span>A national charitable mandate with early opportunities in Ontario, Nova Scotia and British Columbia.</span></div>
+      <div class="signal-item"><strong>Rural + Urban</strong><span>Land, water, habitat and buildings can all be part of long-term public-benefit stewardship.</span></div>
+      <div class="signal-item"><strong>Restoration-first</strong><span>Ecological repair is the starting point, supported by conservation, monitoring and education.</span></div>
+    </section>
+
+    <section class="pillars-section">
+      <div class="pillars-intro">
+        <div><p class="section-kicker">How we work</p></div>
+        <div><h2>Restore. Protect. Learn.</h2><p>Three ideas organize the Trust’s work: repair what has been damaged, protect what matters for the long term, and use those places to build knowledge and public understanding.</p></div>
       </div>
-      <div class="body-copy">
-        <p>
-          Turtle Island Land Trust is a Canadian charitable organization focused on environmental restoration,
-          conservation and public education.
-        </p>
-        <p>
-          We care for places over the long term, use restoration as a tool for ecological recovery,
-          and connect conservation work with learning, research and public participation.
-        </p>
-        <a class="card-link" href="about.html">About the Trust →</a>
+
+      <div class="pillar-grid">
+        <article class="pillar-card pillar-restore">
+          <span class="pillar-number">01</span>
+          <span class="pillar-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 7a7 7 0 0 1 11 3M18 5v5h-5M17 17a7 7 0 0 1-11-3M6 19v-5h5"/><path d="M12 15c-1.8-2.2-.8-5 2.8-6.2.2 3.5-1 5.6-2.8 6.2z"/></svg></span>
+          <h3>Restore</h3>
+          <p>Repair degraded lands, waters, habitats and properties so ecological function, biodiversity and resilience can recover.</p>
+        </article>
+        <article class="pillar-card pillar-protect">
+          <span class="pillar-number">02</span>
+          <span class="pillar-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 19 6v5c0 4.6-2.7 7.8-7 10-4.3-2.2-7-5.4-7-10V6z"/><path d="M9 13c3.2-.2 5.2-1.8 6-5-3.3.5-5.4 2.1-6 5z"/></svg></span>
+          <h3>Protect</h3>
+          <p>Acquire, conserve and steward places whose ecological, heritage, educational or community value should outlast a single owner or generation.</p>
+        </article>
+        <article class="pillar-card pillar-learn">
+          <span class="pillar-number">03</span>
+          <span class="pillar-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5.5c3-1 5-.5 8 1.5v12c-3-2-5-2.5-8-1.5zM20 5.5c-3-1-5-.5-8 1.5v12c3-2 5-2.5 8-1.5z"/></svg></span>
+          <h3>Learn</h3>
+          <p>Connect restoration and conservation to field learning, research, public programs, publications and long-term monitoring.</p>
+        </article>
       </div>
     </section>
 
-    <section class="section projects-showcase">
-      <div class="section-heading">
-        <p class="section-kicker">Our Work</p>
-        <h2>Projects.</h2>
-        <p class="intro">Projects are organized by setting — rural or urban — and tagged by the type of work involved.</p>
+    <section class="explorer-section">
+      <div class="explorer-heading">
+        <div><p class="section-kicker">Explore the work</p></div>
+        <div><h2>Work rooted in real places.</h2><p class="intro">Our project portfolio is organized by setting and by the kind of work involved. As projects are announced, each profile will document the place, the intervention, the evidence and the long-term stewardship plan.</p></div>
       </div>
 
-      <div class="work-split">
-        <a class="work-column" href="projects.html#rural">
-          <span class="work-icon rural-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M3 18l5-6 3 3 3-4 7 7M4 20h16M17 5c-3 .3-5 2-5.5 5 3 0 5.5-1.7 5.5-5z"/></svg>
-          </span>
-          <p class="section-kicker">Rural</p>
-          <h3>Land, water and habitat.</h3>
-          <p>Restoration and conservation projects involving land, habitat, shorelines, wetlands and watersheds.</p>
-          <span class="arrow" aria-hidden="true">→</span>
+      <div class="explorer-grid">
+        <a class="explorer-card" href="projects.html#rural">
+          <div class="explorer-visual explorer-rural" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M5 36h38M8 34l10-14 7 8 5-6 10 12M29 13c4 0 7-3 7-7-4 0-7 3-7 7Zm0 0c-4 0-7-3-7-7 4 0 7 3 7 7Zm0 0v8"/></svg></div>
+          <div class="explorer-meta"><span class="tag tag-restoration">Restoration</span><span class="tag tag-conservation">Conservation</span><span class="tag tag-land">Land</span></div>
+          <h3>Rural Projects</h3>
+          <p>Land, habitat, wetlands, shorelines and watersheds where restoration or long-term protection can create public benefit.</p>
+          <span class="explorer-link">Explore Rural Projects →</span>
         </a>
-        <a class="work-column" href="projects.html#urban">
-          <span class="work-icon urban-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M5 20V8h8v12M13 20V4h6v16M8 11h2M8 14h2M16 8h1M16 11h1M16 14h1M3 20h18"/></svg>
-          </span>
-          <p class="section-kicker">Urban</p>
-          <h3>Land and buildings.</h3>
-          <p>Projects that restore, protect and adapt urban land and buildings for ecological, educational and community benefit.</p>
-          <span class="arrow" aria-hidden="true">→</span>
+
+        <a class="explorer-card" href="projects.html#urban">
+          <div class="explorer-visual explorer-urban" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M7 40V19h15v21M22 40V9h19v31M12 25h5M12 31h5M28 16h6M28 23h6M28 30h6M4 40h40"/></svg></div>
+          <div class="explorer-meta"><span class="tag tag-restoration">Restoration</span><span class="tag tag-land">Land</span><span class="tag tag-buildings">Buildings</span></div>
+          <h3>Urban Projects</h3>
+          <p>Urban land and buildings restored, protected or adapted for ecological, educational and community use.</p>
+          <span class="explorer-link">Explore Urban Projects →</span>
         </a>
+
+        <a class="explorer-card" href="projects.html#education">
+          <div class="explorer-visual explorer-learning" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M6 11c8-2 14 0 18 4v25c-4-4-10-6-18-4V11Zm36 0c-8-2-14 0-18 4v25c4-4 10-6 18-4V11Z"/></svg></div>
+          <div class="explorer-meta"><span class="tag tag-conservation">Education</span></div>
+          <h3>Education & Learning</h3>
+          <p>Field learning, research, workshops, publications, public talks and programs connected to the places we care for.</p>
+          <span class="explorer-link">Explore Education →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="evidence-section">
+      <div class="evidence-intro">
+        <div><p class="section-kicker">Evidence & accountability</p></div>
+        <div><h2>Every project should show its work.</h2><p>TILT project profiles are being designed to make the basis for each intervention clear and to report what can actually be measured over time.</p></div>
+      </div>
+      <div class="evidence-grid">
+        <div class="evidence-item"><span>01</span><h3>Place</h3><p>Where the work happens and why the site matters.</p></div>
+        <div class="evidence-item"><span>02</span><h3>Problem</h3><p>The ecological, heritage or public-benefit need being addressed.</p></div>
+        <div class="evidence-item"><span>03</span><h3>Action</h3><p>What restoration, protection, rehabilitation or education work is being carried out.</p></div>
+        <div class="evidence-item"><span>04</span><h3>Evidence</h3><p>Monitoring, outcomes, partners and long-term stewardship as data become available.</p></div>
       </div>
     </section>
 
     <section class="section">
       <div class="section-heading">
         <p class="section-kicker">Support</p>
-        <h2>Donate or volunteer.</h2>
+        <h2>Put resources behind places that need long-term care.</h2>
       </div>
       <div class="support-options">
         <a class="support-option donate-option" href="support.html#donate">
-          <span class="support-icon donate-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.5-7-9a4 4 0 0 1 7-2.5A4 4 0 0 1 19 11c0 4.5-7 9-7 9z"/></svg>
-          </span>
-          <p class="section-kicker light">Donate</p>
-          <h3>Support the work.</h3>
-          <p>Financial gifts, property, partnerships and professional expertise can help projects move from opportunity to long-term stewardship.</p>
-          <span class="arrow" aria-hidden="true">→</span>
+          <span class="support-icon donate-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.5-7-9a4 4 0 0 1 7-2.5A4 4 0 0 1 19 11c0 4.5-7 9-7 9z"/></svg></span>
+          <p class="section-kicker light">Donate</p><h3>Support the work.</h3><p>Financial gifts, property, partnerships and professional expertise can help move projects from opportunity to long-term stewardship.</p><span class="arrow" aria-hidden="true">→</span>
         </a>
         <a class="support-option volunteer-option" href="support.html#volunteer">
-          <span class="support-icon volunteer-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="2.5"/><circle cx="16" cy="8" r="2.5"/><path d="M3.5 18c.6-3 2.2-4.5 4.5-4.5S11.9 15 12.5 18M11.5 18c.6-3 2.2-4.5 4.5-4.5s3.9 1.5 4.5 4.5"/></svg>
-          </span>
-          <p class="section-kicker">Volunteer</p>
-          <h3>Take part directly.</h3>
-          <p>Join restoration days, monitoring, education, events or skills-based volunteer work.</p>
-          <span class="arrow" aria-hidden="true">→</span>
+          <span class="support-icon volunteer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="2.5"/><circle cx="16" cy="8" r="2.5"/><path d="M3.5 18c.6-3 2.2-4.5 4.5-4.5S11.9 15 12.5 18M11.5 18c.6-3 2.2-4.5 4.5-4.5s3.9 1.5 4.5 4.5"/></svg></span>
+          <p class="section-kicker">Volunteer</p><h3>Take part directly.</h3><p>Contribute field time, ecological skills, education, events, communications or professional expertise.</p><span class="arrow" aria-hidden="true">→</span>
         </a>
       </div>
     </section>
 
     <section class="feature-band">
       <div class="feature-inner">
-        <div>
-          <p class="section-kicker">Contact Us</p>
-          <h2>Get in touch.</h2>
-        </div>
-        <div>
-          <p>Have a project, property, partnership or question for the Trust?</p>
-          <a class="button button-burgundy" href="contact.html">Contact Us</a>
-        </div>
+        <div><p class="section-kicker">Contact Us</p><h2>Bring us a place, project or partnership.</h2></div>
+        <div><p>We welcome conversations about restoration opportunities, conservation, land, buildings, education and long-term stewardship.</p><a class="button button-burgundy" href="contact.html">Contact Us</a></div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div>
-      <div class="footer-brand">Turtle Island Land Trust</div>
-      <div class="small-note">Restoration · Conservation · Education</div>
-    </div>
-    <div class="footer-links">
-      <a href="about.html">About Us</a>
-      <a href="projects.html">Our Work</a>
-      <a href="support.html">Support</a>
-      <a href="contact.html">Contact Us</a>
-    </div>
-    <div class="footer-meta">
-      <span>Canada</span>
-      <span>© <span data-year></span> Turtle Island Land Trust</span>
-    </div>
+    <div><div class="footer-brand">Turtle Island Land Trust</div><div class="small-note">Restore · Protect · Learn</div></div>
+    <div class="footer-links"><a href="about.html">About Us</a><a href="projects.html">Our Work</a><a href="support.html">Support</a><a href="contact.html">Contact Us</a></div>
+    <div class="footer-meta"><span>Canada</span><span>© <span data-year></span> Turtle Island Land Trust</span></div>
   </footer>
   <script src="script.js"></script>
 </body>
