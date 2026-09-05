@@ -25,8 +25,33 @@
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu">Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
       <a href="about.html" aria-current="page">About Us</a>
-      <a href="projects.html">Our Work</a>
-      <a href="support.html">Support</a>
+      <div class="nav-group">
+        <a class="nav-trigger" href="projects.html">Our Work
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Our Work</span>
+          <p class="nav-panel-intro">Projects and learning rooted in the places we restore and protect.</p>
+          <div class="nav-panel-grid">
+            <a class="nav-card" href="projects.html"><span class="icon-wrap icon-projects" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 18l5-6 4 4 3-5 6 7M3 20h18"/></svg></span><span><strong>Projects</strong><small>Rural and urban restoration and conservation.</small></span></a>
+            <a class="nav-card" href="projects.html#education"><span class="icon-wrap icon-education" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5.5c3-1 5-.5 8 1.5v12c-3-2-5-2.5-8-1.5zM20 5.5c-3-1-5-.5-8 1.5v12c3-2 5-2.5 8-1.5z"/></svg></span><span><strong>Education & Learning</strong><small>Field learning, workshops, research and public programs.</small></span></a>
+          </div>
+          <div class="nav-card-links"><a href="projects.html#rural">Rural Projects →</a><a href="projects.html#urban">Urban Projects →</a></div>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a class="nav-trigger" href="support.html">Support
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <div class="nav-panel nav-panel-support">
+          <span class="nav-panel-label">Support</span>
+          <p class="nav-panel-intro">Give resources or take part directly.</p>
+          <div class="nav-panel-grid">
+            <a class="nav-card" href="support.html#donate"><span class="icon-wrap icon-donate" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.5-7-9a4 4 0 0 1 7-2.5A4 4 0 0 1 19 11c0 4.5-7 9-7 9z"/></svg></span><span><strong>Donate</strong><small>Financial, property and in-kind support.</small></span></a>
+            <a class="nav-card" href="support.html#volunteer"><span class="icon-wrap icon-volunteer" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="2.5"/><circle cx="16" cy="8" r="2.5"/><path d="M3.5 18c.6-3 2.2-4.5 4.5-4.5S11.9 15 12.5 18M11.5 18c.6-3 2.2-4.5 4.5-4.5s3.9 1.5 4.5 4.5"/></svg></span><span><strong>Volunteer</strong><small>Field work, events, education and professional skills.</small></span></a>
+          </div>
+        </div>
+      </div>
       <a href="contact.html">Contact Us</a>
     </nav>
   </header>
@@ -39,63 +64,17 @@
     </section>
 
     <section class="section">
-      <div class="content-grid">
-        <h2>Our mission</h2>
-        <div class="content-copy">
-          <p>
-            Turtle Island Land Trust protects, restores and stewards natural and urban places for public benefit,
-            while advancing environmental education, ecological restoration and biodiversity conservation.
-          </p>
-        </div>
-      </div>
-
-      <div class="content-grid">
-        <h2>Our approach</h2>
-        <div class="content-copy">
-          <p>
-            We care for places over the long term, use restoration as a tool for ecological recovery,
-            and connect conservation work directly to research, education and public participation.
-          </p>
-        </div>
-      </div>
-
-      <div class="content-grid">
-        <h2>Where we work</h2>
-        <div class="content-copy">
-          <p>
-            The Trust is Canadian in scope. Early opportunities are expected to focus on Ontario,
-            Nova Scotia and British Columbia, with growth guided by ecological need and organizational capacity.
-          </p>
-        </div>
-      </div>
-
-      <div class="content-grid">
-        <h2>Governance</h2>
-        <div class="content-copy">
-          <p>
-            As the organization grows, this section will include board and team profiles, governance documents,
-            annual reports, financial statements and other transparency information.
-          </p>
-        </div>
-      </div>
+      <div class="content-grid"><h2>Our mission</h2><div class="content-copy"><p>Turtle Island Land Trust protects, restores and stewards natural and urban places for public benefit, while advancing environmental education, ecological restoration and biodiversity conservation.</p></div></div>
+      <div class="content-grid"><h2>Our approach</h2><div class="content-copy"><p>We care for places over the long term, use restoration as a tool for ecological recovery, and connect conservation work directly to research, education and public participation.</p></div></div>
+      <div class="content-grid"><h2>Where we work</h2><div class="content-copy"><p>The Trust is Canadian in scope. Early opportunities are expected to focus on Ontario, Nova Scotia and British Columbia, with growth guided by ecological need and organizational capacity.</p></div></div>
+      <div class="content-grid"><h2>Governance</h2><div class="content-copy"><p>As the organization grows, this section will include board and team profiles, governance documents, annual reports, financial statements and other transparency information.</p></div></div>
     </section>
   </main>
 
   <footer>
-    <div>
-      <div class="footer-brand">Turtle Island Land Trust</div>
-      <div class="small-note">Restoration · Conservation · Education</div>
-    </div>
-    <div class="footer-links">
-      <a href="about.html">About Us</a>
-      <a href="projects.html">Our Work</a>
-      <a href="support.html">Support</a>
-      <a href="contact.html">Contact Us</a>
-    </div>
-    <div class="footer-meta">
-      <span>Canada</span>
-      <span>© <span data-year></span> Turtle Island Land Trust</span>
-    </div>
+    <div><div class="footer-brand">Turtle Island Land Trust</div><div class="small-note">Restoration · Conservation · Education</div></div>
+    <div class="footer-links"><a href="about.html">About Us</a><a href="projects.html">Our Work</a><a href="support.html">Support</a><a href="contact.html">Contact Us</a></div>
+    <div class="footer-meta"><span>Canada</span><span>© <span data-year></span> Turtle Island Land Trust</span></div>
   </footer>
   <script src="script.js"></script>
 </body>
