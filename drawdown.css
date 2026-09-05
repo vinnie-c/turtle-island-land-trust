@@ -1,0 +1,334 @@
+/* Science-forward editorial layer inspired by strong climate and conservation publishing */
+
+.hero.drawdown-hero {
+  min-height: calc(92vh - var(--header));
+  align-items: center;
+  padding-top: 110px;
+}
+
+.drawdown-hero .hero-content {
+  max-width: 970px;
+}
+
+.drawdown-hero h1 {
+  max-width: 960px;
+  font-size: clamp(58px, 8vw, 112px);
+}
+
+.drawdown-hero .hero-copy {
+  max-width: 760px;
+}
+
+.signal-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.signal-item {
+  min-height: 170px;
+  padding: 34px max(24px, calc((100vw - var(--max)) / 6));
+  border-right: 1px solid var(--line);
+}
+
+.signal-item:last-child { border-right: 0; }
+.signal-item strong,
+.signal-item span { display: block; }
+.signal-item strong {
+  margin-bottom: 8px;
+  font-family: "Libre Caslon Display", Georgia, serif;
+  font-size: clamp(30px, 3.2vw, 48px);
+  font-weight: 400;
+  line-height: 1;
+}
+.signal-item span {
+  max-width: 280px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.pillars-section {
+  padding: 110px max(24px, calc((100vw - var(--max)) / 2));
+  background: var(--white);
+}
+
+.pillars-intro {
+  display: grid;
+  grid-template-columns: .8fr 1.8fr;
+  gap: 80px;
+  margin-bottom: 56px;
+}
+
+.pillars-intro h2,
+.explorer-heading h2,
+.evidence-section h2 {
+  margin: 0;
+  font-size: clamp(50px, 6vw, 82px);
+}
+
+.pillars-intro p:last-child {
+  max-width: 660px;
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.pillar-card {
+  min-height: 390px;
+  padding: 34px;
+  border-right: 1px solid var(--line);
+}
+.pillar-card:last-child { border-right: 0; }
+
+.pillar-number {
+  display: block;
+  margin-bottom: 62px;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: .12em;
+}
+
+.pillar-icon {
+  display: grid;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 28px;
+  place-items: center;
+  border-radius: 50%;
+}
+.pillar-icon svg {
+  width: 31px;
+  height: 31px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.65;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.pillar-restore .pillar-icon { background: var(--burgundy); color: var(--white); }
+.pillar-protect .pillar-icon { background: var(--baby-blue); color: var(--deep-burgundy); }
+.pillar-learn .pillar-icon { background: rgba(102,122,104,.16); color: var(--land); }
+
+.pillar-card h3 {
+  margin: 0 0 14px;
+  font-family: "Libre Caslon Display", Georgia, serif;
+  font-size: clamp(38px, 4vw, 54px);
+  font-weight: 400;
+  line-height: 1;
+}
+.pillar-card p { margin: 0; color: var(--muted); font-size: 16px; }
+
+.explorer-section {
+  padding: 110px max(24px, calc((100vw - var(--max)) / 2));
+  background: var(--soft-burgundy);
+}
+
+.explorer-heading {
+  display: grid;
+  grid-template-columns: .8fr 1.8fr;
+  gap: 80px;
+  margin-bottom: 52px;
+}
+.explorer-heading .intro {
+  max-width: 680px;
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.explorer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.explorer-card {
+  display: flex;
+  min-height: 500px;
+  padding: 28px;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  text-decoration: none;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.explorer-card:hover,
+.explorer-card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 45px rgba(53,21,28,.10);
+}
+
+.explorer-visual {
+  position: relative;
+  min-height: 210px;
+  margin: -28px -28px 28px;
+  overflow: hidden;
+}
+.explorer-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(0deg, transparent 0 25px, rgba(255,255,255,.16) 26px 27px);
+}
+.explorer-rural { background: linear-gradient(145deg, #526b57, #91aa91); }
+.explorer-urban { background: linear-gradient(145deg, #8b6238, #d0aa78); }
+.explorer-learning { background: linear-gradient(145deg, #358ba3, #7cc9da); }
+
+.explorer-visual svg {
+  position: absolute;
+  right: 24px;
+  bottom: 22px;
+  z-index: 2;
+  width: 96px;
+  height: 96px;
+  fill: none;
+  stroke: rgba(255,255,255,.92);
+  stroke-width: 1.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.explorer-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+.explorer-card h3 {
+  margin: 0 0 12px;
+  font-family: "Libre Caslon Display", Georgia, serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.02;
+}
+.explorer-card > p {
+  margin: 0;
+  color: var(--muted);
+}
+.explorer-card .explorer-link {
+  margin-top: auto;
+  padding-top: 32px;
+  color: var(--burgundy);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.evidence-section {
+  padding: 110px max(24px, calc((100vw - var(--max)) / 2));
+  background: var(--deep-burgundy);
+  color: var(--white);
+}
+.evidence-section .section-kicker { color: var(--baby-blue); }
+.evidence-intro {
+  display: grid;
+  grid-template-columns: .8fr 1.8fr;
+  gap: 80px;
+  margin-bottom: 56px;
+}
+.evidence-intro p:last-child {
+  max-width: 700px;
+  margin: 18px 0 0;
+  color: rgba(255,255,255,.72);
+  font-size: 18px;
+}
+.evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid rgba(255,255,255,.18);
+}
+.evidence-item {
+  min-height: 230px;
+  padding: 26px 24px 24px 0;
+  border-right: 1px solid rgba(255,255,255,.18);
+}
+.evidence-item + .evidence-item { padding-left: 24px; }
+.evidence-item:last-child { border-right: 0; }
+.evidence-item span {
+  display: block;
+  margin-bottom: 56px;
+  color: var(--baby-blue);
+  font-size: 11px;
+  letter-spacing: .12em;
+}
+.evidence-item h3 {
+  margin: 0 0 10px;
+  font-family: "Libre Caslon Display", Georgia, serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+.evidence-item p { margin: 0; color: rgba(255,255,255,.68); font-size: 14px; }
+
+.about-pillars {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.work-standard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin-top: 50px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.standard-item {
+  min-height: 220px;
+  padding: 28px;
+  border-right: 1px solid var(--line);
+}
+.standard-item:last-child { border-right: 0; }
+.standard-item span { display:block; margin-bottom: 54px; color: var(--burgundy); font-size: 11px; letter-spacing: .12em; }
+.standard-item strong { display:block; margin-bottom: 8px; font-family: "Libre Caslon Display", Georgia, serif; font-size: 28px; font-weight:400; }
+.standard-item p { margin:0; color:var(--muted); font-size:14px; }
+
+@media (max-width: 900px) {
+  .signal-strip,
+  .pillar-grid,
+  .explorer-grid,
+  .evidence-grid,
+  .work-standard {
+    grid-template-columns: 1fr 1fr;
+  }
+  .signal-item:nth-child(2),
+  .pillar-card:nth-child(2),
+  .evidence-item:nth-child(2),
+  .standard-item:nth-child(2) { border-right: 0; }
+  .explorer-card { min-height: 460px; }
+  .explorer-card:last-child { grid-column: 1 / -1; }
+  .pillars-intro,
+  .explorer-heading,
+  .evidence-intro { grid-template-columns: 1fr; gap: 18px; }
+}
+
+@media (max-width: 620px) {
+  .signal-strip,
+  .pillar-grid,
+  .explorer-grid,
+  .evidence-grid,
+  .work-standard {
+    grid-template-columns: 1fr;
+  }
+  .signal-item,
+  .pillar-card,
+  .evidence-item,
+  .standard-item,
+  .evidence-item + .evidence-item {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .evidence-item,
+  .evidence-item + .evidence-item { border-bottom-color: rgba(255,255,255,.18); }
+  .explorer-card:last-child { grid-column: auto; }
+  .pillar-card { min-height: 320px; }
+  .explorer-card { min-height: 440px; }
+}
