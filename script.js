@@ -95,7 +95,12 @@ if (header && toggle) {
   document.body.appendChild(menu);
 
   const educationSection = document.querySelector('.education-band');
-  if (educationSection && !educationSection.id) educationSection.id = 'education';
+  if (educationSection && !educationSection.id) {
+    educationSection.id = 'education';
+    if (window.location.hash === '#education') {
+      requestAnimationFrame(() => educationSection.scrollIntoView());
+    }
+  }
 
   const setMenu = (open) => {
     document.body.classList.toggle('menu-open', open);
