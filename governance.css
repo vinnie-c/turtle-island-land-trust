@@ -1,0 +1,175 @@
+/* Privacy-first board and Indigenous governance additions */
+
+.board-heading > div:last-child p {
+  max-width: 720px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.board-privacy-note {
+  margin-top: 16px !important;
+  font-size: 14px !important;
+}
+
+.board-list-public {
+  grid-template-columns: 1fr 1fr;
+}
+
+.board-member-record {
+  background: var(--paper);
+}
+
+.board-member-record p {
+  max-width: 520px;
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.board-record-link {
+  color: var(--burgundy) !important;
+  font-weight: 600;
+}
+
+.indigenous-governance {
+  margin-top: 110px;
+  padding-top: 100px;
+  border-top: 1px solid var(--line);
+}
+
+.indigenous-governance-intro {
+  display: grid;
+  grid-template-columns: .85fr 1.65fr;
+  gap: 80px;
+}
+
+.indigenous-governance-intro h2 {
+  max-width: 620px;
+  margin: 0;
+  font-size: clamp(48px, 6vw, 78px);
+}
+
+.indigenous-governance-intro > div:last-child p {
+  max-width: 760px;
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.indigenous-governance-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 60px;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.governance-principle {
+  min-height: 300px;
+  padding: 34px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.governance-principle span {
+  display: block;
+  margin-bottom: 58px;
+  color: var(--burgundy);
+  font-size: 11px;
+  letter-spacing: .12em;
+}
+
+.governance-principle h3 {
+  margin: 0 0 14px;
+  font-family: "Libre Caslon Display", Georgia, serif;
+  font-size: clamp(30px, 3vw, 42px);
+  font-weight: 400;
+  line-height: 1.04;
+}
+
+.governance-principle p {
+  max-width: 530px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.governance-principle:nth-child(1) {
+  border-top: 7px solid var(--land);
+}
+
+.governance-principle:nth-child(2) {
+  border-top: 7px solid var(--baby-blue);
+}
+
+.governance-principle:nth-child(3) {
+  border-top: 7px solid var(--burgundy);
+}
+
+.governance-principle:nth-child(4) {
+  border-top: 7px solid var(--buildings);
+}
+
+.board-recruitment {
+  display: grid;
+  grid-template-columns: .85fr 1.65fr;
+  gap: 80px;
+  margin-top: 34px;
+  padding: 56px;
+  background: var(--deep-burgundy);
+  color: var(--white);
+}
+
+.board-recruitment .section-kicker {
+  color: var(--baby-blue);
+}
+
+.board-recruitment h3 {
+  margin: 0;
+  font-family: "Libre Caslon Display", Georgia, serif;
+  font-size: clamp(38px, 4vw, 56px);
+  font-weight: 400;
+  line-height: 1.03;
+}
+
+.board-recruitment > div:last-child p {
+  max-width: 680px;
+  margin: 0;
+  color: rgba(255,255,255,.78);
+  font-size: 17px;
+}
+
+.board-recruitment .button {
+  margin-top: 28px;
+  background: var(--baby-blue);
+  color: var(--deep-burgundy);
+}
+
+@media (max-width: 900px) {
+  .board-list-public,
+  .indigenous-governance-intro,
+  .board-recruitment {
+    grid-template-columns: 1fr;
+  }
+
+  .indigenous-governance-intro,
+  .board-recruitment {
+    gap: 28px;
+  }
+
+  .indigenous-governance-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .board-recruitment {
+    padding: 34px 24px;
+  }
+
+  .governance-principle {
+    min-height: 260px;
+    padding: 28px 24px;
+  }
+}
