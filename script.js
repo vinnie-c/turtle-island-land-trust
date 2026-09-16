@@ -8,23 +8,33 @@ document.querySelectorAll('[data-year]').forEach(el => {
 });
 
 // Keep the public-facing ethos consistent across pages.
-const ethosText = 'Restore · Learn · Steward';
+const ethosText = 'Restore · Steward · Learn';
 document.querySelectorAll('.footer-philosophy').forEach(el => {
   el.textContent = ethosText;
 });
 
-document.querySelectorAll('.pillars-intro h2').forEach(el => {
-  if (/Restore\.\s*(Steward|Learn)\.\s*(Learn|Steward)\./.test(el.textContent.trim())) {
-    el.textContent = 'Restore. Learn. Steward.';
+// Normalize any visible legacy instances of the three-part ethos.
+document.querySelectorAll('.eyebrow, h1, h2, h3, p, span').forEach(el => {
+  const text = el.textContent.trim();
+  if (text === 'Restore · Learn · Steward') {
+    el.textContent = ethosText;
+  } else if (text === 'Restore. Learn. Steward.') {
+    el.textContent = 'Restore. Steward. Learn.';
   }
 });
 
-// Present the three pillars in the same order everywhere: Restore → Learn → Steward.
+document.querySelectorAll('.pillars-intro h2').forEach(el => {
+  if (/Restore\.\s*(Steward|Learn)\.\s*(Learn|Steward)\./.test(el.textContent.trim())) {
+    el.textContent = 'Restore. Steward. Learn.';
+  }
+});
+
+// Present the three pillars in the same order everywhere: Restore → Steward → Learn.
 document.querySelectorAll('.pillar-grid').forEach(grid => {
   const cards = Array.from(grid.querySelectorAll(':scope > .pillar-card'));
   if (cards.length < 3) return;
 
-  const order = { Restore: 0, Learn: 1, Steward: 2 };
+  const order = { Restore: 0, Steward: 1, Learn: 2 };
   cards.sort((a, b) => {
     const aTitle = a.querySelector('h3')?.textContent.trim() || '';
     const bTitle = b.querySelector('h3')?.textContent.trim() || '';
@@ -116,7 +126,7 @@ if (header && toggle) {
 
           <div class="menu-meta">
             <span>Canada</span>
-            <span>Restore · Learn · Steward</span>
+            <span>Restore · Steward · Learn</span>
           </div>
         </div>
       </nav>
