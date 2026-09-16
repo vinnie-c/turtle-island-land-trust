@@ -1,0 +1,323 @@
+/* Place, relationship and knowledge framework */
+
+.relationship-section {
+  padding: 110px max(24px, calc((100vw - var(--max)) / 2));
+  background: var(--pale-blue);
+}
+
+.relationship-intro {
+  display: grid;
+  grid-template-columns: .8fr 1.8fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.relationship-intro h2,
+.pathway-heading h2,
+.project-framework-heading h2 {
+  margin: 0;
+  font-size: clamp(50px, 6vw, 82px);
+}
+
+.relationship-copy > p {
+  max-width: 760px;
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.relationship-callout {
+  margin-top: 36px;
+  padding: 28px 30px;
+  border-left: 4px solid var(--burgundy);
+  background: rgba(255,255,255,.62);
+}
+
+.relationship-callout strong {
+  display: block;
+  margin-bottom: 8px;
+  font-family: "Libre Caslon Display", Georgia, serif;
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.relationship-callout p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.pathway-section {
+  padding: 110px max(24px, calc((100vw - var(--max)) / 2));
+  background: var(--white);
+}
+
+.pathway-heading {
+  display: grid;
+  grid-template-columns: .8fr 1.8fr;
+  gap: 80px;
+  margin-bottom: 54px;
+}
+
+.pathway-heading p:last-child {
+  max-width: 720px;
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.pathway-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.pathway-item {
+  min-height: 285px;
+  padding: 28px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.pathway-item span {
+  display: block;
+  margin-bottom: 62px;
+  color: var(--burgundy);
+  font-size: 11px;
+  letter-spacing: .12em;
+}
+
+.pathway-item h3 {
+  margin: 0 0 12px;
+  font-family: "Libre Caslon Display", Georgia, serif;
+  font-size: clamp(28px, 2.6vw, 38px);
+  font-weight: 400;
+  line-height: 1.02;
+}
+
+.pathway-item p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.knowledge-section {
+  padding: 110px max(24px, calc((100vw - var(--max)) / 2));
+  background: var(--deep-burgundy);
+  color: var(--white);
+}
+
+.knowledge-section .section-kicker { color: var(--baby-blue); }
+
+.knowledge-intro {
+  display: grid;
+  grid-template-columns: .8fr 1.8fr;
+  gap: 80px;
+  margin-bottom: 56px;
+}
+
+.knowledge-intro h2 {
+  margin: 0;
+  font-size: clamp(50px, 6vw, 82px);
+}
+
+.knowledge-intro > div:last-child > p {
+  max-width: 780px;
+  margin: 0 0 20px;
+  color: rgba(255,255,255,.76);
+  font-size: 18px;
+}
+
+.knowledge-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid rgba(255,255,255,.2);
+  border-left: 1px solid rgba(255,255,255,.2);
+}
+
+.knowledge-card {
+  min-height: 310px;
+  padding: 34px;
+  border-right: 1px solid rgba(255,255,255,.2);
+  border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.knowledge-card span {
+  display: block;
+  margin-bottom: 58px;
+  color: var(--baby-blue);
+  font-size: 11px;
+  letter-spacing: .12em;
+}
+
+.knowledge-card h3 {
+  margin: 0 0 14px;
+  font-family: "Libre Caslon Display", Georgia, serif;
+  font-size: clamp(32px, 3.2vw, 44px);
+  font-weight: 400;
+}
+
+.knowledge-card p {
+  max-width: 590px;
+  margin: 0;
+  color: rgba(255,255,255,.7);
+}
+
+.knowledge-protocol {
+  margin-top: 38px;
+  padding: 30px;
+  border: 1px solid rgba(255,255,255,.22);
+}
+
+.knowledge-protocol strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--baby-blue);
+  font-size: 12px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.knowledge-protocol p {
+  max-width: 900px;
+  margin: 0;
+  color: rgba(255,255,255,.74);
+}
+
+.relational-standard {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.relational-standard .standard-item:nth-child(3n) {
+  border-right: 0;
+}
+
+.project-framework {
+  padding: 110px max(24px, calc((100vw - var(--max)) / 2));
+  background: var(--soft-burgundy);
+}
+
+.project-framework-heading {
+  display: grid;
+  grid-template-columns: .8fr 1.8fr;
+  gap: 80px;
+  margin-bottom: 50px;
+}
+
+.project-framework-heading p:last-child {
+  max-width: 720px;
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.project-template {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.project-template-item {
+  min-height: 235px;
+  padding: 30px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.project-template-item span {
+  display: block;
+  margin-bottom: 44px;
+  color: var(--burgundy);
+  font-size: 11px;
+  letter-spacing: .12em;
+}
+
+.project-template-item h3 {
+  margin: 0 0 10px;
+  font-family: "Libre Caslon Display", Georgia, serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.project-template-item p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.territory-principle {
+  display: grid;
+  grid-template-columns: .8fr 1.8fr;
+  gap: 80px;
+  margin-top: 54px;
+  padding: 48px;
+  background: var(--white);
+  border: 1px solid var(--line);
+}
+
+.territory-principle h3 {
+  margin: 0;
+  font-family: "Libre Caslon Display", Georgia, serif;
+  font-size: clamp(34px, 4vw, 52px);
+  font-weight: 400;
+  line-height: 1.02;
+}
+
+.territory-principle p {
+  max-width: 720px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.footer-philosophy {
+  color: inherit;
+}
+
+@media (max-width: 1050px) {
+  .pathway-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 900px) {
+  .relationship-intro,
+  .pathway-heading,
+  .knowledge-intro,
+  .project-framework-heading,
+  .territory-principle {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .pathway-grid,
+  .relational-standard {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .relational-standard .standard-item:nth-child(3n) { border-right: 1px solid var(--line); }
+  .relational-standard .standard-item:nth-child(2n) { border-right: 0; }
+}
+
+@media (max-width: 620px) {
+  .pathway-grid,
+  .knowledge-grid,
+  .relational-standard,
+  .project-template {
+    grid-template-columns: 1fr;
+  }
+
+  .pathway-item,
+  .knowledge-card,
+  .project-template-item {
+    min-height: 0;
+  }
+
+  .relational-standard .standard-item,
+  .relational-standard .standard-item:nth-child(3n),
+  .relational-standard .standard-item:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .territory-principle { padding: 32px 24px; }
+}
