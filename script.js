@@ -41,14 +41,14 @@ if (header && toggle) {
                 <span class="menu-icon" aria-hidden="true">
                   <svg viewBox="0 0 48 48"><path d="M5 36h38M8 34l10-14 7 8 5-6 10 12M29 13c4 0 7-3 7-7-4 0-7 3-7 7Zm0 0c-4 0-7-3-7-7 4 0 7 3 7 7Zm0 0v8"/></svg>
                 </span>
-                <span><strong>Rural Projects</strong><small>Land, water and habitat</small></span>
+                <span><strong>Rural Projects</strong><small>Restoration, land and stewardship</small></span>
               </a>
 
               <a class="menu-card menu-card-buildings" href="projects.html#urban">
                 <span class="menu-icon" aria-hidden="true">
                   <svg viewBox="0 0 48 48"><path d="M7 40V19h15v21M22 40V9h19v31M12 25h5M12 31h5M28 16h6M28 23h6M28 30h6M4 40h40"/></svg>
                 </span>
-                <span><strong>Urban Projects</strong><small>Land and buildings</small></span>
+                <span><strong>Urban Projects</strong><small>Land, buildings and place</small></span>
               </a>
 
               <a class="menu-card menu-card-education" href="projects.html#education">
@@ -69,7 +69,7 @@ if (header && toggle) {
                 <span class="menu-icon" aria-hidden="true">
                   <svg viewBox="0 0 48 48"><path d="M24 40S7 30 7 17c0-6 4-10 10-10 4 0 6 2 7 5 1-3 4-5 7-5 6 0 10 4 10 10 0 13-17 23-17 23Z"/></svg>
                 </span>
-                <span><strong>Donate</strong><small>Give resources or property</small></span>
+                <span><strong>Donate</strong><small>Support restoration and stewardship</small></span>
               </a>
 
               <a class="menu-card menu-card-volunteer" href="support.html#volunteer">
@@ -85,7 +85,7 @@ if (header && toggle) {
 
           <div class="menu-meta">
             <span>Canada</span>
-            <span>Restoration · Conservation · Education</span>
+            <span>Restore · Steward · Return</span>
           </div>
         </div>
       </nav>
