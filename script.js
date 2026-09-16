@@ -85,7 +85,7 @@ if (header && toggle) {
 
           <div class="menu-meta">
             <span>Canada</span>
-            <span>Restore · Steward · Return</span>
+            <span>Restore · Steward · Learn</span>
           </div>
         </div>
       </nav>
