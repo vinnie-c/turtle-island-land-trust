@@ -7,6 +7,37 @@ document.querySelectorAll('[data-year]').forEach(el => {
   el.textContent = new Date().getFullYear();
 });
 
+// Keep the public-facing ethos consistent across pages.
+const ethosText = 'Restore · Learn · Steward';
+document.querySelectorAll('.footer-philosophy').forEach(el => {
+  el.textContent = ethosText;
+});
+
+document.querySelectorAll('.pillars-intro h2').forEach(el => {
+  if (/Restore\.\s*(Steward|Learn)\.\s*(Learn|Steward)\./.test(el.textContent.trim())) {
+    el.textContent = 'Restore. Learn. Steward.';
+  }
+});
+
+// Present the three pillars in the same order everywhere: Restore → Learn → Steward.
+document.querySelectorAll('.pillar-grid').forEach(grid => {
+  const cards = Array.from(grid.querySelectorAll(':scope > .pillar-card'));
+  if (cards.length < 3) return;
+
+  const order = { Restore: 0, Learn: 1, Steward: 2 };
+  cards.sort((a, b) => {
+    const aTitle = a.querySelector('h3')?.textContent.trim() || '';
+    const bTitle = b.querySelector('h3')?.textContent.trim() || '';
+    return (order[aTitle] ?? 99) - (order[bTitle] ?? 99);
+  });
+
+  cards.forEach((card, index) => {
+    const number = card.querySelector('.pillar-number');
+    if (number) number.textContent = String(index + 1).padStart(2, '0');
+    grid.appendChild(card);
+  });
+});
+
 const header = document.querySelector('.site-header');
 const toggle = document.querySelector('.menu-toggle');
 const existingNav = document.querySelector('.site-nav');
@@ -85,7 +116,7 @@ if (header && toggle) {
 
           <div class="menu-meta">
             <span>Canada</span>
-            <span>Restore · Steward · Learn</span>
+            <span>Restore · Learn · Steward</span>
           </div>
         </div>
       </nav>
