@@ -117,7 +117,7 @@
 .nav-card:hover,
 .nav-card:focus-visible {
   background: var(--white);
-  border-color: rgba(116, 42, 58, .34);
+  border-color: rgba(80, 29, 37, .34);
   transform: translateY(-2px);
 }
 
@@ -181,9 +181,9 @@
 }
 
 .icon-projects { background: rgba(102, 122, 104, .14); color: var(--land); }
-.icon-education { background: rgba(88, 184, 208, .20); color: var(--deep-burgundy); }
-.icon-donate { background: rgba(116, 42, 58, .12); color: var(--burgundy); }
-.icon-volunteer { background: rgba(88, 184, 208, .22); color: var(--deep-burgundy); }
+.icon-education { background: rgba(77, 181, 215, .20); color: var(--deep-burgundy); }
+.icon-donate { background: rgba(80, 29, 37, .12); color: var(--burgundy); }
+.icon-volunteer { background: rgba(77, 181, 215, .22); color: var(--deep-burgundy); }
 
 .work-icon,
 .support-icon {
@@ -204,7 +204,7 @@
 .rural-icon { background: rgba(102, 122, 104, .16); color: var(--land); }
 .urban-icon { background: rgba(180, 134, 82, .17); color: #765128; }
 .donate-icon { background: rgba(255,255,255,.14); color: var(--white); }
-.volunteer-icon { background: rgba(88,31,43,.11); color: var(--deep-burgundy); }
+.volunteer-icon { background: rgba(63, 23, 29,.11); color: var(--deep-burgundy); }
 
 /* ---------- Project taxonomy ---------- */
 .work-legend {
@@ -463,7 +463,7 @@
   height: 62px;
   margin-bottom: 26px;
   border-radius: 50%;
-  background: rgba(88,31,43,.12);
+  background: rgba(63, 23, 29,.12);
   color: var(--deep-burgundy);
 }
 
