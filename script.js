@@ -1,8 +1,3 @@
-const menuStyles = document.createElement('link');
-menuStyles.rel = 'stylesheet';
-menuStyles.href = 'menu.css';
-document.head.appendChild(menuStyles);
-
 document.querySelectorAll('[data-year]').forEach(el => {
   el.textContent = new Date().getFullYear();
 });
