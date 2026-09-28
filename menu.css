@@ -336,7 +336,33 @@ body.menu-open .menu-line:nth-child(3) {
   text-transform: uppercase;
 }
 
-@media (max-width: 1100px) {
+@media (min-width: 761px) and (max-width: 1100px) {
+  :root { --header: 132px; }
+
+  .site-header {
+    flex-wrap: wrap;
+    min-height: var(--header);
+    align-content: center;
+    row-gap: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .site-header .menu-toggle { margin-left: auto; }
+
+  .site-nav {
+    order: 3;
+    flex: 0 0 100%;
+    justify-content: center;
+    gap: clamp(10px, 2vw, 24px);
+    margin-left: 0;
+  }
+
+  .nav-dropdown { top: calc(100% + 8px); }
+  .nav-dropdown::before { height: 10px; }
+}
+
+@media (max-width: 760px) {
   .site-nav {
     display: none !important;
   }
