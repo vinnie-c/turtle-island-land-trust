@@ -55,12 +55,38 @@ const existingNav = document.querySelector('.site-nav');
 if (header && toggle) {
   if (existingNav) {
     existingNav.innerHTML = `
-      <a href="projects.html">Explore With Us</a>
-      <a href="projects.html#education">Learn With Us</a>
-      <a href="support.html">Support Us</a>
-      <a href="contact.html">Visit Us</a>
-      <a href="about.html">About Us</a>
+      <div class="nav-item"><a href="projects.html">Explore With Us</a><button class="nav-expand" type="button" aria-label="Explore With Us submenu" aria-expanded="false" aria-controls="nav-explore">⌄</button><div class="nav-dropdown" id="nav-explore"><a href="projects.html">Our Work</a><a href="projects.html#rural">Rural Projects</a><a href="projects.html#urban">Urban Projects</a><a href="conservation.html">Conservation</a><a href="restoration.html">Restoration</a></div></div>
+      <div class="nav-item"><a href="projects.html#education">Learn With Us</a><button class="nav-expand" type="button" aria-label="Learn With Us submenu" aria-expanded="false" aria-controls="nav-learn">⌄</button><div class="nav-dropdown" id="nav-learn"><a href="projects.html#education">Education &amp; Learning</a><a href="education.html">Education</a><a href="about.html">Our Approach</a></div></div>
+      <div class="nav-item"><a href="support.html">Support Us</a><button class="nav-expand" type="button" aria-label="Support Us submenu" aria-expanded="false" aria-controls="nav-support"><span aria-hidden="true">⌄</span></button><div class="nav-dropdown" id="nav-support"><a href="support.html#donate">Donate</a><a href="support.html#volunteer">Volunteer</a><a href="partners.html">Partner With Us</a><a href="landholders.html">Land &amp; Property</a></div></div>
+      <div class="nav-item"><a href="contact.html">Visit Us</a><button class="nav-expand" type="button" aria-label="Visit Us submenu" aria-expanded="false" aria-controls="nav-visit"><span aria-hidden="true">⌄</span></button><div class="nav-dropdown" id="nav-visit"><a href="contact.html">Contact Us</a><a href="contact.html#direct-contact">Get in Touch</a></div></div>
+      <div class="nav-item"><a href="about.html">About Us</a><button class="nav-expand" type="button" aria-label="About Us submenu" aria-expanded="false" aria-controls="nav-about"><span aria-hidden="true">⌄</span></button><div class="nav-dropdown" id="nav-about"><a href="about.html">Our Story</a><a href="about.html#board">Our Board</a><a href="governance.html">Governance &amp; Documents</a><a href="contact.html">Contact Us</a></div></div>
     `;
+
+    const closeDropdowns = () => existingNav.querySelectorAll('.nav-item').forEach(item => {
+      item.classList.remove('is-expanded');
+      item.querySelector('.nav-expand').setAttribute('aria-expanded', 'false');
+    });
+    existingNav.querySelectorAll('.nav-expand').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.closest('.nav-item');
+        const shouldOpen = !item.classList.contains('is-expanded');
+        closeDropdowns();
+        item.classList.toggle('is-expanded', shouldOpen);
+        button.setAttribute('aria-expanded', String(shouldOpen));
+      });
+    });
+    document.addEventListener('click', event => {
+      if (!existingNav.contains(event.target)) closeDropdowns();
+    });
+    existingNav.addEventListener('focusout', event => {
+      if (!existingNav.contains(event.relatedTarget)) closeDropdowns();
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape') {
+        const openButton = existingNav.querySelector('.nav-expand[aria-expanded="true"]');
+        if (openButton) { closeDropdowns(); openButton.focus(); }
+      }
+    });
   }
 
   toggle.innerHTML = `
