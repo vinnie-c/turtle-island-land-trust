@@ -1,14 +1,14 @@
 :root {
-  --ink: #2f1117;
-  --burgundy: #501d25;
-  --deep-burgundy: #3f171d;
-  --baby-blue: #4db5d7;
-  --pale-blue: #dbf0f7;
-  --soft-burgundy: #eadfe2;
+  --ink: #2d1a22;
+  --burgundy: #6d4052;
+  --deep-burgundy: #4d2d3a;
+  --baby-blue: #6ab4e0;
+  --pale-blue: #e3f1fa;
+  --soft-burgundy: #e1d8dc;
   --paper: #f7f3f4;
   --white: #ffffff;
-  --muted: #6d4d53;
-  --line: rgba(80, 29, 37, .18);
+  --muted: #8a6674;
+  --line: rgba(109, 64, 82, .18);
   --max: 1180px;
   --header: 76px;
 }
@@ -150,7 +150,7 @@ img { max-width: 100%; display: block; }
   align-items: end;
   padding: 120px max(24px, calc((100vw - var(--max)) / 2)) 76px;
   background:
-    linear-gradient(90deg, rgba(63, 23, 29,.96) 0%, rgba(80, 29, 37,.91) 43%, rgba(80, 29, 37,.35) 100%),
+    linear-gradient(90deg, rgba(77, 45, 58,.96) 0%, rgba(109, 64, 82,.91) 43%, rgba(109, 64, 82,.35) 100%),
     var(--burgundy);
   color: var(--white);
 }
@@ -268,8 +268,8 @@ h2 {
   min-width: 260px;
   min-height: 260px;
   border-radius: 50%;
-  border: 1px solid rgba(77, 181, 215,.52);
-  background: radial-gradient(circle, rgba(77, 181, 215,.2), rgba(77, 181, 215,.02) 68%);
+  border: 1px solid rgba(106, 180, 224,.52);
+  background: radial-gradient(circle, rgba(106, 180, 224,.2), rgba(106, 180, 224,.02) 68%);
 }
 
 .horizon {
@@ -278,7 +278,7 @@ h2 {
   width: 70%;
   height: 28%;
   border-radius: 50% 50% 0 0;
-  background: rgba(77, 181, 215,.20);
+  background: rgba(106, 180, 224,.20);
   transform: rotate(-5deg);
 }
 
@@ -288,7 +288,7 @@ h2 {
   bottom: 2%;
   right: -16%;
   width: 82%;
-  background: rgba(77, 181, 215,.28);
+  background: rgba(106, 180, 224,.28);
 }
 
 .water-lines {
@@ -302,7 +302,7 @@ h2 {
     to bottom,
     transparent 0,
     transparent 18px,
-    rgba(77, 181, 215,.7) 19px,
+    rgba(106, 180, 224,.7) 19px,
     transparent 20px
   );
 }
@@ -413,15 +413,15 @@ h2 {
 .education-copy > p:last-child {
   max-width: 640px;
   margin: 28px 0 0;
-  color: rgba(63, 23, 29,.76);
+  color: rgba(77, 45, 58,.76);
   font-size: 18px;
 }
 
-.education-band .light { color: rgba(63, 23, 29,.68); }
+.education-band .light { color: rgba(77, 45, 58,.68); }
 
 .education-list {
   align-self: end;
-  border-top: 1px solid rgba(63, 23, 29,.28);
+  border-top: 1px solid rgba(77, 45, 58,.28);
 }
 
 .education-list a,
@@ -430,7 +430,7 @@ h2 {
   grid-template-columns: 50px 1fr;
   gap: 20px;
   padding: 18px 0;
-  border-bottom: 1px solid rgba(63, 23, 29,.28);
+  border-bottom: 1px solid rgba(77, 45, 58,.28);
   font-size: 18px;
   text-decoration: none;
 }
@@ -456,7 +456,7 @@ h2 {
 
 .small-note {
   font-size: 13px;
-  color: #76555c;
+  color: #987985;
 }
 
 .projects-showcase {
@@ -666,7 +666,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 22px;
-  color: #735159;
+  color: #8a6674;
 }
 
 .footer-links a { text-decoration: none; }
