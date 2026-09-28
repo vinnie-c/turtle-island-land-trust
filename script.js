@@ -53,7 +53,15 @@ const toggle = document.querySelector('.menu-toggle');
 const existingNav = document.querySelector('.site-nav');
 
 if (header && toggle) {
-  if (existingNav) existingNav.remove();
+  if (existingNav) {
+    existingNav.innerHTML = `
+      <a href="projects.html">Explore With Us</a>
+      <a href="projects.html#education">Learn With Us</a>
+      <a href="support.html">Support Us</a>
+      <a href="contact.html">Visit Us</a>
+      <a href="about.html">About Us</a>
+    `;
+  }
 
   toggle.innerHTML = `
     <span class="menu-line"></span>
