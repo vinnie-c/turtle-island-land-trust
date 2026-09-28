@@ -1,7 +1,35 @@
 /* Full-screen navigation inspired by editorial climate/science sites */
 .site-nav {
-  display: none !important;
+  display: flex !important;
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  align-items: center;
+  gap: clamp(24px, 2.6vw, 52px);
+  margin-left: 56px;
 }
+
+.site-nav > a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: clamp(15px, 1.35vw, 22px);
+  font-weight: 600;
+  letter-spacing: -.02em;
+  white-space: nowrap;
+}
+
+.site-nav > a:hover,
+.site-nav > a:focus-visible {
+  color: var(--burgundy);
+}
+
+.site-header {
+  min-height: 108px;
+}
+
+.site-header .brand {
+  flex: 0 0 auto;
+}
+
 
 .site-header .menu-toggle {
   position: relative;
@@ -235,6 +263,16 @@ body.menu-open .menu-line:nth-child(3) {
   font-size: 11px;
   letter-spacing: .08em;
   text-transform: uppercase;
+}
+
+@media (max-width: 1100px) {
+  .site-nav {
+    display: none !important;
+  }
+
+  .site-header {
+    min-height: var(--header);
+  }
 }
 
 @media (max-width: 900px) {
