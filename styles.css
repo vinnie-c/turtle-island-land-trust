@@ -149,9 +149,7 @@ img { max-width: 100%; display: block; }
   display: grid;
   align-items: end;
   padding: 120px max(24px, calc((100vw - var(--max)) / 2)) 76px;
-  background:
-    linear-gradient(90deg, rgba(88, 31, 43,.96) 0%, rgba(116, 42, 58,.91) 43%, rgba(116, 42, 58,.35) 100%),
-    var(--burgundy);
+  background: var(--burgundy);
   color: var(--white);
 }
 
