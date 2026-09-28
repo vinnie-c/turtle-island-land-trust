@@ -1,14 +1,14 @@
 :root {
-  --ink: #2d1a22;
-  --burgundy: #6d4052;
-  --deep-burgundy: #4d2d3a;
+  --ink: #35151c;
+  --burgundy: #742a3a;
+  --deep-burgundy: #581f2b;
   --baby-blue: #6ab4e0;
   --pale-blue: #e3f1fa;
-  --soft-burgundy: #e1d8dc;
+  --soft-burgundy: #f0e2e6;
   --paper: #f7f3f4;
   --white: #ffffff;
-  --muted: #8a6674;
-  --line: rgba(109, 64, 82, .18);
+  --muted: #7b4a55;
+  --line: rgba(116, 42, 58, .18);
   --max: 1180px;
   --header: 76px;
 }
@@ -150,7 +150,7 @@ img { max-width: 100%; display: block; }
   align-items: end;
   padding: 120px max(24px, calc((100vw - var(--max)) / 2)) 76px;
   background:
-    linear-gradient(90deg, rgba(77, 45, 58,.96) 0%, rgba(109, 64, 82,.91) 43%, rgba(109, 64, 82,.35) 100%),
+    linear-gradient(90deg, rgba(88, 31, 43,.96) 0%, rgba(116, 42, 58,.91) 43%, rgba(116, 42, 58,.35) 100%),
     var(--burgundy);
   color: var(--white);
 }
@@ -413,15 +413,15 @@ h2 {
 .education-copy > p:last-child {
   max-width: 640px;
   margin: 28px 0 0;
-  color: rgba(77, 45, 58,.76);
+  color: rgba(88, 31, 43,.76);
   font-size: 18px;
 }
 
-.education-band .light { color: rgba(77, 45, 58,.68); }
+.education-band .light { color: rgba(88, 31, 43,.68); }
 
 .education-list {
   align-self: end;
-  border-top: 1px solid rgba(77, 45, 58,.28);
+  border-top: 1px solid rgba(88, 31, 43,.28);
 }
 
 .education-list a,
@@ -430,7 +430,7 @@ h2 {
   grid-template-columns: 50px 1fr;
   gap: 20px;
   padding: 18px 0;
-  border-bottom: 1px solid rgba(77, 45, 58,.28);
+  border-bottom: 1px solid rgba(88, 31, 43,.28);
   font-size: 18px;
   text-decoration: none;
 }
@@ -456,7 +456,7 @@ h2 {
 
 .small-note {
   font-size: 13px;
-  color: #987985;
+  color: #8a5964;
 }
 
 .projects-showcase {
@@ -666,7 +666,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 22px;
-  color: #8a6674;
+  color: #7b4a55;
 }
 
 .footer-links a { text-decoration: none; }
